@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" styleClass="vBox" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autogex.WelcomeController">
+	<padding>
+		<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
+   <children>
+      <Label text="Bienvenue sur AUTOGEX">
+         <font>
+            <Font name="Poppins SemiBold" size="50.0" />
+         </font>
+      </Label>
+      <Label text="un logiciel qui vous permet de simuler les automates de votre choix et de  generer leur expression reguliere  ">
+         <font>
+            <Font name="Poppins Medium Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#onContinue" style="-fx-background-color: #2E5DD6; -fx-background-radius: 20;" text="Continuer" textFill="WHITE">
+         <font>
+            <Font name="Poppins SemiBold" size="30.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+         </padding>
+      </Button>
+   </children>
+</VBox>

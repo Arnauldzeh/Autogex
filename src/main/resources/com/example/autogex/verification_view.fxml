@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" styleClass="vBox" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autogex.VerificationController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <HBox fx:id="hBox" alignment="CENTER" spacing="20.0" visible="false">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label text="La regex de votre automate est :" />
+            <Label fx:id="regex" text="regex" />
+         </children>
+      </HBox>
+      <Label text="Entrer le mot a verifier" />
+      <TextField fx:id="textField" styleClass="textfield" />
+      <Button mnemonicParsing="false" onAction="#onNext" text="Continuer" />
+      <Button mnemonicParsing="false" onAction="#menu" text="Revenir au menu" />
+   </children>
+</VBox>

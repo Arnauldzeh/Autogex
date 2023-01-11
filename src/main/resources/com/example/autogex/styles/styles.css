@@ -1,0 +1,19 @@
+.root{
+    -fx-font-family: Poppins;
+    -fx-font-size:20;
+}
+
+.button{
+    -fx-background-color: #2E5DD6;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius:24;
+    -fx-padding:10 30;
+}
+.vBox{
+    -fx-background-radius:30;
+}
+
+.textfield{
+    -fx-background-radius:20;
+    -fx-border-radius:20;
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane styleClass="vBox" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autogex.Question_Controller">
+   <content>
+      <VBox alignment="CENTER_LEFT" spacing="20.0">
+         <padding>
+            <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Label text="Question sur la partie :" />
+                  <Label fx:id="stepLabel" text="1" />
+               </children>
+            </HBox>
+            <Label />
+            <Label maxWidth="0.0" minWidth="0.0" prefWidth="0.0" text="1. Votre expression possede t'il un nombre de caracteres maximum, minimum ou fixe?" visible="false" />
+            <HBox alignment="CENTER_LEFT" disable="true" maxHeight="0.0" minHeight="0.0" prefHeight="0.0" spacing="30.0" visible="false">
+               <children>
+                  <VBox alignment="TOP_CENTER" spacing="20.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="Max" />
+                        <TextField fx:id="maxSize" promptText="Entrer le nombre de caractere max" styleClass="textfield" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="309.0" layoutY="10.0" spacing="20.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="Min" />
+                        <TextField fx:id="minSize" promptText="Entrer le nombre de caractere max" styleClass="textfield" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="156.0" layoutY="10.0" spacing="20.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="Fixe" />
+                        <TextField fx:id="fixedSize" promptText="Entrer le nombre de caractere max" styleClass="textfield" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <CheckBox mnemonicParsing="false" text="1. cette partie du mot contient t-il des occurences successives de symboles ?" />
+            <HBox fx:id="hBox2" spacing="20.0" />
+            <HBox alignment="CENTER_LEFT" spacing="30.0">
+               <children>
+                  <TextField fx:id="caracterMulti" promptText="Entrer le caractere" styleClass="textfield" />
+                  <TextField fx:id="number" layoutX="10.0" layoutY="10.0" promptText="Entrer le nombre de fois" styleClass="textfield" />
+                  <VBox fx:id="add2" alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label text="+">
+                           <font>
+                              <Font name="Poppins SemiBold" size="48.0" />
+                           </font></Label>
+                        <Label text="Ajouter" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+            <CheckBox layoutX="110.0" layoutY="404.0" mnemonicParsing="false" text="2. votre mot a t’il des préfixes particuliers ?" />
+            <HBox fx:id="hBox3" spacing="20.0" />
+            <HBox alignment="CENTER_LEFT" layoutX="110.0" layoutY="452.0" spacing="30.0">
+               <children>
+                  <TextField fx:id="prefix" layoutX="10.0" layoutY="10.0" promptText="Entrer le prefix" styleClass="textfield" />
+                  <VBox fx:id="add3" alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label text="+">
+                           <font>
+                              <Font name="Poppins SemiBold" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label text="Ajouter" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+            <CheckBox layoutX="110.0" layoutY="618.0" mnemonicParsing="false" text="3. votre mot a t’il des suffixes particuliers ?" />
+            <HBox fx:id="hBox4" />
+            <HBox alignment="CENTER_LEFT" layoutX="110.0" layoutY="666.0" spacing="30.0">
+               <children>
+                  <TextField fx:id="suffix" layoutX="10.0" layoutY="10.0" promptText="Entrer le suffix" styleClass="textfield" />
+                  <VBox fx:id="add4" alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label text="+">
+                           <font>
+                              <Font name="Poppins SemiBold" size="48.0" />
+                           </font>
+                        </Label>
+                        <Label text="Ajouter" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onNext" text="Continuer">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding></Button>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

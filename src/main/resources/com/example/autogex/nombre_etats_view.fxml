@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" styleClass="vBox" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autogex.NombreEtatController">
+	<padding>
+		<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
+	<children>
+		<Label text="Entrer le nombre d’etats de votre automate" />
+		<TextField fx:id="textField" maxWidth="300.0" onKeyReleased="#onChange" prefWidth="300.0" styleClass="textfield" />
+      <Label fx:id="error" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+		<Button mnemonicParsing="false" onAction="#onNext" text="Continuer" />
+	</children>
+</VBox>

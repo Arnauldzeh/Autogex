@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" styleClass="vBox" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autogex.SelectTypeController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Comment voulez vous decrire votre automate ?">
+         <VBox.margin>
+            <Insets bottom="50.0" />
+         </VBox.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#regex" text="Je connais mon Expression Reguliere" />
+      <Button layoutX="54.0" layoutY="78.0" mnemonicParsing="false" onAction="#transitionTable" text="Je connais les etats et toutes les transitions" />
+      <Button layoutX="54.0" layoutY="146.0" mnemonicParsing="false" onAction="#descript" text="Je peux decrire comment sont les mots de mon langage" />
+   </children>
+</VBox>

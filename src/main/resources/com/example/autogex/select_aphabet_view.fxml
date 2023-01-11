@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" styleClass="vBox" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autogex.SelectAlphabetController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Selectionner les symboles de votre automate">
+         <font>
+            <Font name="Poppins SemiBold" size="25.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onSelect" text="A-Z" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="a-z" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="0-9" />
+         </children></HBox>
+      <HBox alignment="CENTER" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onSelect" text="()" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="-" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="." />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="_" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="*" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="{}" />
+            <Button mnemonicParsing="false" onAction="#onSelect" style="-fx-min-width: 60;" text="[]" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="154.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onSelect" text="!" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="?" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="|" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="+" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="'" />
+            <Button mnemonicParsing="false" onAction="#onSelect" text="/" />
+            <Button mnemonicParsing="false" onAction="#onSelect" style="-fx-min-width: 60;" text="\\" />
+            <Button layoutX="621.0" layoutY="10.0" mnemonicParsing="false" onAction="#onSelect" style="-fx-min-width: 60;" text="," />
+            <Button layoutX="710.0" layoutY="10.0" mnemonicParsing="false" onAction="#onSelect" style="-fx-min-width: 60;" text="&quot;" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label text="Entrer d’autres symboles separer par des espaces" />
+         </children>
+      </HBox>
+      <TextField fx:id="textField" styleClass="textfield" />
+      <Label fx:id="alphabet" />
+      <Button mnemonicParsing="false" onAction="#onNext" text="Continuer" />
+   </children>
+</VBox>
